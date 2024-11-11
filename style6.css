@@ -1,0 +1,16 @@
+/* 배경을 하얀색으로 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 전체 화면 높이 사용 */
+    display: flex;
+    justify-content: center;  /* 가로 중앙 정렬 */
+    align-items: center;      /* 세로 중앙 정렬 */
+    background-color: #ffffff; /* 하얀 배경색 */
+}
+
+/* 이미지 스타일 */
+.center-image {
+    max-width: 100%; /* 이미지가 화면 너비를 넘지 않도록 */
+    height: auto;
+}

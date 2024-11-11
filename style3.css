@@ -1,0 +1,45 @@
+/* 전체 페이지 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000000; /* 어두운 배경 (밤 하늘처럼) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 달 이미지를 감싸는 컨테이너 */
+.moon-container {
+    position: relative;
+}
+
+/* 달 이미지 스타일 */
+.moon {
+    width: 500px; /* 달 크기 */
+    animation: float 3s ease-in-out infinite; /* 둥둥 떠다니는 애니메이션 */
+}
+
+/* 달의 둥둥 떠다니는 애니메이션 */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* 위로 떠오르는 거리 */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#Text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10;
+}
